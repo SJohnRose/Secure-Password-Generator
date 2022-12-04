@@ -1,4 +1,4 @@
-# Week3--Challenge-PasswordGenerator
+# Secure-Password-Generator
 A JavaScript application that randomly generates a strong password based on user specified length and choice of characters.
 
 ## Features

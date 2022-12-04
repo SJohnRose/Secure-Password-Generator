@@ -33,6 +33,7 @@ THEN the password is written to the page
 
 ## Mock-up
 The following image shows the application's appearance and functionality.
+![image](https://user-images.githubusercontent.com/115912745/205486835-f477c963-1f17-4279-9833-19718e01be78.png)
 
 
 ## How to access the application?

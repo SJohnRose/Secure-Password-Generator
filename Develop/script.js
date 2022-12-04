@@ -11,6 +11,7 @@ function generatePassword() {
   var passwordLength = prompt("How many characters?");
   if (passwordLength < 8 || passwordLength > 128) {
     window.alert("Invalid length!")
+    return ("Click Generate Password again");
   }
   var lowerChoice = confirm("Do you need lowercase letters?");
   var upperChoice = confirm("Do you need uppercase letters?");
@@ -20,6 +21,7 @@ function generatePassword() {
   // Generate list of characters based on user choice of criteria
   var passwordChars = "";
 
+  if (lowerChoice || upperChoice || numberChoice || specialChoice) {
   if(lowerChoice) {
     passwordChars = alphabets;
   }
@@ -41,6 +43,10 @@ function generatePassword() {
     password = password + passwordChars.charAt(randomGen)
   }
   return password;  
+  }
+else {
+  window.alert("At least one criteria must be selected!")
+}
 }
 
 // Write password to the #password input

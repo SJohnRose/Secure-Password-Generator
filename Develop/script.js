@@ -5,7 +5,7 @@ var alphabetsUpper = alphabets.toUpperCase();
 var numbers = "0123456789";
 var specialChars = "@!#$%^&*";
 
-// Generate a strong password
+// Main function
 function generatePassword() {
   var password = "";
   var passwordLength = prompt("How many characters?");
@@ -46,7 +46,7 @@ function generatePassword() {
     }
     return password;  
   }
-  // Redirect user to main page
+  // Redirect user to main page if no criteria is selected
   else {
     window.alert("At least one criteria must be selected!");
     return ("Click Generate Password again");
